@@ -1,0 +1,20 @@
+{
+  "name": "mobile-ui-components",
+  "version": "1.0.0",
+  "description": "Repository for ui components",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/millicodee/mobile-ui-components.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/millicodee/mobile-ui-components/issues"
+  },
+  "homepage": "https://github.com/millicodee/mobile-ui-components#readme"
+}
