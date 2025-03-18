@@ -1,8 +1,9 @@
 {
-  "name": "mobile-ui-components",
+  "name": "@millicodee/mobile-ui-components",
   "version": "1.0.0",
   "description": "Repository for ui components",
   "main": "src/index.js",
+  "files": ["src"], 
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,9 +11,12 @@
     "type": "git",
     "url": "git+https://github.com/millicodee/mobile-ui-components.git"
   },
-  "keywords": [],
+  "keywords": ["react-native", "ui", "components", "mobile"],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "bugs": {
     "url": "https://github.com/millicodee/mobile-ui-components/issues"
   },
