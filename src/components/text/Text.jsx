@@ -1,8 +1,8 @@
 import React from "react";
-import { Text } from "react-native";
+import { Text as RNText } from "react-native";
 import { COLORS, FONTS } from "../../constants/base";
 
-const AppText = ({
+const Text = ({
   text = "",
   style = {},
   color = COLORS.text_dark,
@@ -15,7 +15,7 @@ const AppText = ({
   numberOfLines,
 }) => {
   return (
-    <Text
+    <RNText
       ellipsizeMode={"tail"}
       numberOfLines={numberOfLines ? numberOfLines : 1000}
       allowFontScaling={false}
@@ -29,8 +29,8 @@ const AppText = ({
       }}>
       {text}
       {children && <Text style={childrenStyle}>{children}</Text>}
-    </Text>
+    </RNText>
   );
 };
 
-export default AppText;
+export default Text;

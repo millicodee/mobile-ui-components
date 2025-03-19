@@ -1,14 +1,14 @@
 import React from "react";
 import { View, TouchableOpacity, ActivityIndicator } from "react-native";
 import { COLORS, FONTS, SIZES } from "../../constants/base";
-import AppText from "../texts/AppText";
+import AppText from "../text/Text";
 import GradientWrapper from "../GradientWrapper";
 
-const AppButton = ({
+const Button = ({
   label = "Placeholder",
   labelColor = COLORS.white,
   color = null,
-  gradientColors = [COLORS.primary, COLORS.secondary], // Default values from module
+  gradientColors = [COLORS.primary, COLORS.secondary],
   disabled = false,
   onPress = () => console.log("Not implemented yet!"),
   height = 42,
@@ -87,4 +87,4 @@ const AppButton = ({
   );
 };
 
-export default AppButton;
+export default Button;
