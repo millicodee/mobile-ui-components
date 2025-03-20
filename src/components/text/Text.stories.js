@@ -1,8 +1,8 @@
 import React from "react";
 import { storiesOf } from "@storybook/react-native";
 import { View } from "react-native";
-import Text from "../components/Text";
-import { COLORS, FONTS } from "../constants/base";
+import Text from "./Text";
+import { COLORS, FONTS } from "../../constants/base";
 
 storiesOf("Text", module)
   .addDecorator((story) => <View style={{ padding: 16 }}>{story()}</View>)

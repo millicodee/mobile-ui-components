@@ -3,7 +3,7 @@ import { View } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import { action } from "@storybook/addon-actions";
 import Button from "./Button";
-import { COLORS } from "../constants/base";
+import { COLORS } from "../../constants/base";
 
 storiesOf("Button", module)
   .addDecorator((story) => <View style={{ padding: 16 }}>{story()}</View>)

@@ -2,8 +2,8 @@ import React from "react";
 import { storiesOf } from "@storybook/react-native";
 import { action } from "@storybook/addon-actions";
 import { View } from "react-native";
-import Input from "../components/Input";
-import { COLORS } from "../constants/base";
+import Input from "./Input";
+import { COLORS } from "../../constants/base";
 
 storiesOf("Input", module)
   .addDecorator((story) => <View style={{ padding: 16 }}>{story()}</View>)
