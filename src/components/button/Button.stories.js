@@ -2,6 +2,7 @@ import React from "react";
 import { View } from "react-native";
 import Button from "./Button";
 import { COLORS } from "../../constants/base";
+import IC_SHARE from "../../assets/images/icons/ic_share.svg";
 
 export default {
   title: "Components/Button",
@@ -11,7 +12,7 @@ export default {
   },
   decorators: [
     (Story) => (
-      <View style={{ padding: 16 }}>
+      <View style={{ padding: 16, alignItems: "center" }}>
         <Story />
       </View>
     ),
@@ -27,30 +28,80 @@ export const Disabled = {
   },
 };
 
-export const WithCustomColor = {
+export const Loading = {
   args: {
-    label: "Custom Color",
-    color: COLORS.success,
+    label: "Loading",
+    loading: true,
   },
 };
 
-export const WithGradientColors = {
+export const SolidColor = {
+  args: {
+    label: "Black Button",
+    color: COLORS.black,
+  },
+};
+
+export const Gradient = {
   args: {
     label: "Gradient",
     gradientColors: [COLORS.primary, COLORS.secondary],
   },
 };
 
-export const WithIcon = {
+export const NovaSportGradient = {
   args: {
-    label: "With Icon",
-    icon: <View style={{ width: 10, height: 10, backgroundColor: "white" }} />,
+    label: "Nova Sport",
+    gradientColors: [
+      COLORS.nova_sport_gradient[0],
+      COLORS.nova_sport_gradient[1],
+    ],
   },
 };
 
-export const LoadingState = {
+export const GrandGradient = {
   args: {
-    label: "Loading",
+    label: "Grand",
+    gradientColors: [
+      COLORS.grand_gradient[0],
+      COLORS.grand_gradient[1],
+    ],
+  },
+};
+
+export const Outline = {
+  args: {
+    label: "Outline",
+    outline: true,
+    labelColor: COLORS.black,
+  },
+};
+
+export const WithIcon = {
+  args: {
+    label: "With Icon",
+    icon: <IC_SHARE />,
+  },
+};
+
+export const IconWithLoading = {
+  args: {
+    label: "Icon + Loading",
+    icon: <IC_SHARE />,
     loading: true,
+  },
+};
+
+export const SmallButton = {
+  args: {
+    label: "Small",
+    height: 32,
+  },
+};
+
+export const LargeLabel = {
+  args: {
+    label: "Larger Text",
+    size: 20,
   },
 };

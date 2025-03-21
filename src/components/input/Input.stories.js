@@ -51,13 +51,6 @@ export const SecureTextEntry = {
   },
 };
 
-export const WithIcon = {
-  args: {
-    label: "Search",
-    iconName: "magnify",
-  },
-};
-
 export const WithCustomBackground = {
   args: {
     label: "Custom Background",
